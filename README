@@ -8,3 +8,17 @@ make && make install
 
 方法来自
 https://github.com/lusis/ngx_stream_upstream_check_module
+
+
+This version of nginx is a modification of the http_upstream_health_check module, aimed at implementing health_check functionality in nginx stream flows.
+
+It has only been tested on nginx-1.13.6 running on Debian 12 X86-64.
+
+Usage:
+make && make install
+
+
+
+
+
+
