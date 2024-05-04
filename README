@@ -1,0 +1,10 @@
+该nginx版本是修改自http_upstream_health_check模块的一个版本，旨在实现nginx stream流中使用health_check功能
+
+目前仅在运行在Debian12 X86-64上的 nginx-1.13.6版本进行了测试
+
+用法
+make && make install 
+
+
+方法来自
+https://github.com/lusis/ngx_stream_upstream_check_module
