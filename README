@@ -19,6 +19,26 @@ make && make install
 
 
 
+Example：
+
+
+stream{
+    upstream node {
+	    server  [yourIP]:[yourPort] ;
+	    server  [youIP]:[yourPort];
+            check interval=500 rise=1 fall=1 timeout=500;
+    }
+    server{
+        listen 0.0.0.0:10808;
+        listen 0.0.0.0:10808 udp;
+	listen [::]:10808;
+	listen [::]:10808 udp;
+        proxy_pass node;
+    }
+}
+
+
+
 
 
 
